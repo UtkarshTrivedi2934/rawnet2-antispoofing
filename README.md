@@ -1,10 +1,10 @@
-# RawNet2 ASVspoof 2021 baseline
+# RawNet2 ASVspoof 2019 baseline
 
-By Hemlata Tak, EURECOM, 2021
+By Utkarsh Trivedi, 2025
 
 ------
 
-The code in this repository serves as one of the baselines of the ASVspoof 2021 challenge, using an end-to-end method that uses a model based on the RawNet2 topology as described [here](https://arxiv.org/abs/2011.01108).
+The code in this repository serves as one of the baselines of the ASVspoof 2019 challenge, using an end-to-end method that uses a model based on the RawNet2 topology as described [here](https://arxiv.org/abs/2011.01108).
 
 ## Experiments
 
@@ -19,7 +19,7 @@ python main.py --track=LA --loss=CCE   --lr=0.0001 --batch_size=32
 
 ### Testing
 
-To test your own model on the ASVspoof 2021 DF evaluation set:
+To test your own model on the ASVspoof 2019 LA evaluation set:
 
 ```
 python main.py --track=LA --loss=CCE --is_eval --eval --model_path='/path/to/your/your_best_model.pth' --eval_output='eval_CM_scores.txt'
